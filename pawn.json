@@ -1,0 +1,31 @@
+{
+    "user": "El-SpaceX",
+    "repo": "sampctl-plugin-timerfix",
+    "resources": [
+        {
+            "name": "timerfix-linux.zip",
+            "platform": "linux",
+            "archive": true,
+            "includes": [
+                "timerfix.inc"
+            ],
+            "plugins": [
+                "timerfix.so"
+            ]
+        },
+        {
+            "name": "timerfix-win.zip",
+            "platform": "windows",
+            "archive": true,
+            "includes": [
+                "timerfix.inc"
+            ],
+            "plugins": [
+                "timerfix.dll"
+            ]
+        }
+    ],
+    "runtime": {
+        "plugins": ["El-SpaceX/sampctl-timerfix-plugin"]
+    }
+}
